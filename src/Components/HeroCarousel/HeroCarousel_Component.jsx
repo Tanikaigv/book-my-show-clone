@@ -83,7 +83,7 @@ const HeroCarousel_Component = () => {
           {images.map((image) => {
             <div className="w-full h-56 md:h-80 py-3">
               <img
-                src={`https://image.tmdb.org/t/p/original${images.backdrop_path}`}
+                src={`https://image.tmdb.org/t/p/original${image.backdrop_path}`}
                 alt="Hero Banner"
                 className="w-full h-full rounded-md object-cover"
               />
