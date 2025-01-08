@@ -12,10 +12,26 @@ const Home_page = () => {
 
   useEffect(()=>{
     const requestTopRatedMovies = async()=>{
-      const getTopRatedMovies = await axios.get("https://api.themoviedb.org/3/movie/top_rated?api_key=034802a5eae8516b27d4f46a421bd0b3");
+      const getTopRatedMovies = await axios.get("movie/top_rated?");
       setRecommendedMovies(getTopRatedMovies.data.results);
     }
     requestTopRatedMovies();
+  },[]);
+
+  useEffect(()=>{
+    const requestPrimierMovies = async()=>{
+      const getPopularMovies = await axios.get("movie/popular?");
+      setPremier(getPopularMovies.data.results);
+    }
+    requestPrimierMovies();
+  },[]);
+
+  useEffect(()=>{
+    const requestOnlineStreamEvents = async()=>{
+      const getUpcomingMovies = await axios.get("movie/upcoming?");
+      setOnlineStreamEvents(getUpcomingMovies.data.results);
+    }
+    requestOnlineStreamEvents();
   },[]);
   return (
     <>
