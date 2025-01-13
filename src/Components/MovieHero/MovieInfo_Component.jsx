@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { MovieContext } from "../../context/Movie.context";
+import Payment from "../Payment_Modal/Payment.Component";
 
 const MovieInfo = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const MovieInfo = () => {
 
   return (
     <>
-      {/* <PaymentModel setIsOpen={setIsOpen} isOpen={isOpen} price={price} />; */}
+      <Payment setIsOpen={setIsOpen} isOpen={isOpen} price={price} />;
       <div className="flex flex-col gap-8">
         <h1 className="text-white text-5xl font-bold">
           {movie.original_title}
