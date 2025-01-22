@@ -54,11 +54,6 @@ const Home_page = () => {
 
       <div className='bg-premier-800 py-12'>
         <div className='container mx-auto px-4 md:px-12 my-8 flex flex-col gap-3'>
-          <div className='hidden md:flex'>
-              <img src="https://image3.mouthshut.com/images/ImagesR/imageuser_m/2018/3/925840065-6197646-1.jpg?rnd=86270" 
-               alt='Rupay'
-               className=''/>
-          </div>
           <PosterSlider_Component 
             title="Premier Movies"
             subtitle="List of Premier Movies"

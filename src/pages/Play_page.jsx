@@ -15,7 +15,7 @@ const PlayPage = () => {
             <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
               <Poster_Component
                 isPlay={true}
-                src=""
+                src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-so-rude-of-me-by-swati-sachdeva-0-2022-9-4-t-6-10-37.jpg"
                 title="So Rude of Me By Sweets"
                 subtitle="Comedy Shows | English, Kannada | 18yrs+ | 2hr 30mins"
               />
